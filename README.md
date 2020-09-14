@@ -90,7 +90,7 @@ In the `TabuCol2` class, the amendments are as follows:
 
 ### The Problem of This Tabu Strategy
 
-In my experiment, some zero moves can stuck in a dead loop. As is shown in the following pictures.
+In my experiment, some zero moves can cause a dead loop. As is shown in the following pictures.
 
 <img src="img\zero move_circulation1.png" alt="loop1" style="zoom:50%;" />
 
