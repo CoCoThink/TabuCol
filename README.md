@@ -102,7 +102,7 @@ In my experiment, some zero moves can cause a dead loop. As is shown in the foll
 
 This is because some vertexes are adjacent.  They'll unlock each other when making a ZERO_MOVE.
 
-So my solution is to use `LNoise` to control the probability of skipping ZERO_MOVE. When `LNoise` becomes bigger due to `nonNegativeDeltaIter`, it is more likely to skip `ZERO_MOVE`. In this way we can jump out of the dead loop.
+So my solution is using `LNoise` to control the probability of skipping `ZERO_MOVE`. When `LNoise` becomes bigger due to `nonNegativeDeltaIter`, it is more likely to skip `ZERO_MOVE`. In this way we can jump out of the dead loop.
 
 ```C++
 if(rand()%100<LNoise){
